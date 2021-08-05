@@ -351,7 +351,7 @@ param_kwargs:
 %type<qilang::NodePtr> const;
 const:
   CONST ID "=" const_exp    { $$ = NODE2(ConstDeclNode, @$, $2, $4); }
-| CONST ID type "=" const_exp { $$ = NODE3(ConstDeclNode, @$, $2, $3, $5); }
+| CONST ID ":" type "=" const_exp { $$ = NODE3(ConstDeclNode, @$, $2, $4, $6); }
 
 
 // #######################################################################################

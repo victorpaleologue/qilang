@@ -400,7 +400,7 @@ public:
   }
 
   void visitDecl(ConstDeclNode* node) override {
-    indent() << "const ";
+    indent() << "static const ";
     accept(node->effectiveType());
     out() << " " << node->name;
     if (node->data) {

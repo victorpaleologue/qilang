@@ -194,8 +194,8 @@ FLOAT    {UFLOAT}
   RETURN_VAL(ID, std::string(yytext));
 }
 
-{STRING}          {   // "   for indentation
-  qilang::LiteralNodePtr node = boost::make_shared<qilang::StringLiteralNode>(std::string(yytext + 1, strlen(yytext) - 2), qilang::makeLocation(LOC));
+{STRING}          {
+  qilang::LiteralNodePtr node = boost::make_shared<qilang::StringLiteralNode>(yytext, qilang::makeLocation(LOC));
   RETURN_VAL(STRING, node);
 }
 

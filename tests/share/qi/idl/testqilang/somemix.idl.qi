@@ -10,6 +10,8 @@ enum Option
   const Second = 1
 end
 
+const theOnlyTruth: str = "cette phrase est fausse"
+
 # comment comment
 interface KindaManager
   fn findTruth() -> int

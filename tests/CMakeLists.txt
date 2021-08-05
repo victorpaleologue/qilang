@@ -179,6 +179,7 @@ if(QI_WITH_TESTS)
     SRC
     "test_qilang.hpp"
     "test_qilang.cpp"
+    "test_qilang_const.cpp"
     "test_qilang_raw.cpp"
     "test_qilang_enum_include.cpp"
     "test_qilang_function.cpp"
